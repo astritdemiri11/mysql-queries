@@ -9,9 +9,10 @@ FROM docker_cli_parameter AS dp
 INNER JOIN docker_cli_command as dc
 INNER JOIN docker_cli_command_parameter as dcp
 INNER JOIN data_type as dt
-WHERE 
+ON 
 	dcp.docker_cli_command_id = dc.id AND
     dcp.docker_cli_parameter_id = dp.id AND
-    dp.data_type_id = dt.id AND
+    dp.data_type_id = dt.id
+WHERE
     dc.parent_id = 47
 ORDER BY dc.order, dcp.order
