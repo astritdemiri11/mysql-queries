@@ -2,6 +2,7 @@ SELECT
     rc.usage AS RC_Usage, 
     rco.name AS RCO_Name,
     rco.value AS RCO_Value,
+    rco.default_value AS RCO_Default,
     rco.order AS RCO_Order,
     rt.name AS RT_Name,
     rco.definition as RC_Definition

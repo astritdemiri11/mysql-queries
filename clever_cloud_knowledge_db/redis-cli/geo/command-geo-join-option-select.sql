@@ -12,5 +12,5 @@ INNER JOIN data_type as rt
 ON 
 	rco.redis_cli_command_id = rc.id AND
     rco.data_type_id = rt.id
-WHERE rc.redis_cli_command_group_id = 5
+WHERE rc.redis_cli_command_group_id = 4
 ORDER BY rc.order, rco.order, rco.name

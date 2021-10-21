@@ -3,5 +3,5 @@ SELECT
 FROM redis_cli_command AS rc
 INNER JOIN data_type AS dt
 ON rc.return_type = dt.id
-WHERE rc.redis_cli_command_group_id = 7
+WHERE rc.redis_cli_command_group_id = 6
 ORDER BY rc.order
